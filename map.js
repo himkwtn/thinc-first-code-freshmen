@@ -11,8 +11,5 @@ const d = {
     school: undefined
 }
 
-const removeFields = obj => Object.keys(obj).filter(key => obj[key]).map(key => { 
-    this[key] = obj[key]
-    return this
-}).reduce( (a,b) => { return {...a,...b} })
+const removeFields = obj => Object.keys(obj).filter(key => obj[key]).map(key => { return { [key] : obj[key]} }).reduce(Object.assign)
 console.log(removeFields(d))

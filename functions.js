@@ -28,7 +28,7 @@ module.exports = {
         const newArr = students.filter( e => e.id !== id)
         const newStudent = {
             ... student,
-            ...updated
+            ... this.removeInvalidFields(updated)
         }
         const data = JSON.stringify([...newArr, newStudent].sort( (a,b) => a.id-b.id) , null, 4)
         fs.writeFileSync('students.json', data)
@@ -39,10 +39,9 @@ module.exports = {
         const data = JSON.stringify(newArr , null, 4)
         fs.writeFileSync('students.json', data)
     },
-    removeFields: function(obj){
-        return Object.keys(obj).filter(key => obj[key]).map(key => { 
-            this[key] = obj[key]
-            return this
-        }).reduce( (a,b) => { return {...a,...b} })
-    }  
+    removeInvalidFields: obj =>
+        Object.keys(obj).filter(key => {
+            const e = obj[key]
+            return e && e.length > 0 && Object.keys(e).length > 0 
+        }).map(key => { return { [key] : obj[key]} }).reduce(Object.assign)
 }

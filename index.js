@@ -17,6 +17,5 @@ const newStudent = {
 }
 // f.create(newStudent)
 // f.delete(4)
-f.update(0,{name:"jeff bezos"})
+f.update(2,{name:"D. Trump", contact: null, courses: undefined})
 students = f.getStudents()
-console.log(f.findStudent(0))
