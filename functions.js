@@ -4,7 +4,7 @@ const removeFields = obj => Object.keys(obj)
     .filter(key => obj[key])
     .map(key => ({ [key]:obj[key] }))
     .reduce( Object.assign )
-    
+
 const findStudent = id => getStudents().find( student => student.id === id)
 
 const getStudents = () => JSON.parse(fs.readFileSync("students.json"));
