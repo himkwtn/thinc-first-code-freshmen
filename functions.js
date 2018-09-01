@@ -5,7 +5,7 @@ const removeFields = obj => Object.keys(obj)
     .map(key => ({ [key]:obj[key] }))
     .reduce( Object.assign )
 
-const findStudent = id => getStudents().find( student => student.id === id)
+const findStudent = id => getStudents().find( student => student.id == id)
 
 const getStudents = () => JSON.parse(fs.readFileSync("students.json"));
 const createStudent = student => {
@@ -30,6 +30,7 @@ const updateStudent = (id, updated) => {
     const newArr = students.map( e => e.id === id ? newStudent : e  )
     const data = JSON.stringify(newArr , null, 4)
     fs.writeFileSync('students.json', data)
+    return student
 }
 const deleteStudent = id => {
     const students = getStudents()
