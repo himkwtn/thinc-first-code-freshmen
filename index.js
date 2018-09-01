@@ -1,7 +1,6 @@
-const  f = require("./functions")
-let students
+const  {getStudents, findStudent, createStudent, updateStudent, deleteStudent} = require("./functions")
 
-students = f.getStudents()
+students = getStudents()
 const newStudent = {
     name: "asd",
     contact: {
@@ -15,8 +14,8 @@ const newStudent = {
         "dsdsds"
     ]
 }
-// f.create(newStudent)
-// f.delete(4)
-f.update(0,{name:"jeff bezos"})
-students = f.getStudents()
-console.log(f.findStudent(0))
+// createStudent(newStudent)
+// deleteStudent(4)
+// updateStudent(2,{name:"ab cd", contact: null})
+// students = getStudents()
+console.log(findStudent(1))
