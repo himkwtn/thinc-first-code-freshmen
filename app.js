@@ -1,6 +1,6 @@
 const morgan = require('morgan')
 const app = require('express')()
-const studentsRouter = require('./routes/students')
+const router = require('./routes/index')
 const PORT = 3000
 
 app.listen(PORT, () => {console.log(`running on port: ${PORT}`)})
@@ -9,6 +9,6 @@ app.use(morgan('dev'))
 app.get('/', (req,res,) => {
     res.send('hello world')
 })
-app.use('/students', studentsRouter)
+app.use('/api', router)
 
 
