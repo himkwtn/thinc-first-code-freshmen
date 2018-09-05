@@ -8,9 +8,9 @@
             "line": "abbcd"
         },
         "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
+            "zxcv",
+            "qwe",
+            "ghjhk"
         ]
     },
     {
@@ -113,72 +113,52 @@
     },
     {
         "id": 10,
-        "name": "asd",
+        "name": "a b",
+        "faculty": "Architecture",
         "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "abbcd"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
+            "phone": "123",
+            "email": "qwe",
+            "line": "asd"
+        }
+    },
+    {
+        "id": 10,
+        "name": "a b",
+        "faculty": "Architecture",
+        "contact": {
+            "phone": "123",
+            "email": "qwe",
+            "line": "asd"
+        }
     },
     {
         "id": 10,
         "name": "asd",
+        "faculty": "Architecture",
         "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "abbcd"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
+            "phone": "123",
+            "email": "qwe",
+            "line": "asd"
+        }
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "asd",
+        "faculty": "Architecture",
         "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "abbcd"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
+            "phone": "123",
+            "email": "qwe",
+            "line": "asd"
+        }
     },
     {
-        "id": 10,
-        "name": "asd",
+        "id": 12,
+        "name": "asdf",
+        "faculty": "Architecture",
         "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "abbcd"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
-    },
-    {
-        "id": 10,
-        "name": "asd",
-        "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "abbcd"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
+            "phone": "123",
+            "email": "qwe",
+            "line": "asd"
+        }
     }
 ]
