@@ -34,6 +34,7 @@ router.post("/update", (req, res) => {
 router.get("/delete", (req, res) => {
   const id = req.query.id;
   const deleted = deleteStudent(id);
+  console.log(deleted);
   res.send(deleted);
 });
 

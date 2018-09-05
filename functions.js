@@ -14,7 +14,6 @@ const createStudent = student => {
   const students = getStudents();
   const ids = getStudents().map(s => s.id);
   const id = Math.max(...ids) + 1;
-  console.log(id);
   const newStudent = {
     id,
     ...student
@@ -42,11 +41,13 @@ const updateSubject = (id, subjects) =>
   updateStudent(id, { courses: subjects });
 
 const deleteStudent = id => {
+  const parsedId = id.replace(/[^\d]/g, "");
   const students = getStudents();
-  const newArr = students.filter(e => e.id != id);
+  const newArr = students.filter(e => e.id != parsedId);
   const data = JSON.stringify(newArr, null, 4);
   fs.writeFileSync("students.json", data);
-  return findStudent(id);
+  const deletedStudent = findStudent(parsedId);
+  return deletedStudent;
 };
 
 module.exports = {

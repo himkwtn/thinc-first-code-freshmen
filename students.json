@@ -110,55 +110,5 @@
             "adasd",
             "dsdsds"
         ]
-    },
-    {
-        "id": 10,
-        "name": "a b",
-        "faculty": "Architecture",
-        "contact": {
-            "phone": "123",
-            "email": "qwe",
-            "line": "asd"
-        }
-    },
-    {
-        "id": 10,
-        "name": "a b",
-        "faculty": "Architecture",
-        "contact": {
-            "phone": "123",
-            "email": "qwe",
-            "line": "asd"
-        }
-    },
-    {
-        "id": 10,
-        "name": "asd",
-        "faculty": "Architecture",
-        "contact": {
-            "phone": "123",
-            "email": "qwe",
-            "line": "asd"
-        }
-    },
-    {
-        "id": 11,
-        "name": "asd",
-        "faculty": "Architecture",
-        "contact": {
-            "phone": "123",
-            "email": "qwe",
-            "line": "asd"
-        }
-    },
-    {
-        "id": 12,
-        "name": "asdf",
-        "faculty": "Architecture",
-        "contact": {
-            "phone": "123",
-            "email": "qwe",
-            "line": "asd"
-        }
     }
 ]
