@@ -84,20 +84,6 @@
         ]
     },
     {
-        "id": 8,
-        "name": "asd",
-        "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "qwer"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
-    },
-    {
         "id": 9,
         "name": "asd",
         "contact": {

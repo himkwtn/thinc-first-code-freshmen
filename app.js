@@ -5,13 +5,13 @@ const bodyParser = require("body-parser");
 const PORT = 3000;
 
 app.listen(PORT, () => {
-  console.log(`running on port: ${PORT}`);
+	console.log(`running on port: ${PORT}`);
 });
 app.set("json spaces", 2);
 app.use(morgan("dev"));
 app.use(require("cors")());
 app.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
-  res.send("hello world");
+	res.send("hello world");
 });
 app.use("/api", router);

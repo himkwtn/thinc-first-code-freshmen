@@ -8,7 +8,16 @@ const removeFields = obj =>
 
 const findStudent = id => getStudents().find(student => student.id == id);
 
-const getStudents = () => JSON.parse(fs.readFileSync("students.json"));
+const getData = file => {
+  try {
+    const data = JSON.parse(fs.readFileSync(`./Data/${file}.json`));
+    return data;
+  } catch (e) {
+    return "file not found";
+  }
+};
+
+const getStudents = () => getData("students");
 
 const createStudent = student => {
   const students = getStudents();
@@ -52,6 +61,7 @@ const deleteStudent = id => {
 
 module.exports = {
   findStudent,
+  getData,
   getStudents,
   createStudent,
   updateStudent,
