@@ -14,24 +14,46 @@ $ npm install
 Navigate to **hello-wolrd.js** for reference
 
 1. varibale declaration
-   use let if the vaule may be changed later
-   let a = 5 // a = 5
-   a = a + 5 // now a = 10
-   use const for variable whose value will not be changed
-   const PI = 3.14 // PI = 3.14
-   PI = 3 // error because PI can not be changed
+   use **_let_** if the vaule may be changed later
+
+    ```javascript
+    let a = 5; // a = 5
+    a = a + 5; // now a = 10
+    ```
+
+    use **_const_** for variable whose value will not be changed
+
+    ```javascript
+    const PI = 3.14; // PI = 3.14
+    PI = 3; // error because PI can not be changed
+    ```
 
 2. Data Type
 
 -   **number**: 1, 2, 3.456
 -   **string**: text ex. "Hello Wolrd" both single and double quote can be used
 -   **boolean**: true/false
--   **array**: list of multiple variables ex. [1,1,2,3,5,8]["tinky winky", "dipsy", "lala", "poe"]
-    -   to access the value, use index ex. let arr = [1,2,3,4] -> arr[1] will be 2.
-    -   _Note that the first index is zero_
+-   **array**: list of multiple variables
+
+```javascript
+let numbers = [1, 1, 2, 3, 5, 8];
+let teltubies = ["tinky winky", "dipsy", "lala", "poe"];
+//to access the value, use index
+numbers[2]; // is equal to 2.
+//Note that the first index is zero
+```
+
 -   **object**: key-value pair.
-    -   let = human { first_name: "John", last_name:"Doe",age:20}
-    -   to access value, use the key ex. human.firstname is "John"
+
+```javascript
+let = human {
+    first_name: "John",
+    last_name:"Doe",
+    age:20
+}
+//to access value, use the key ex.
+human.first_name // is "John"
+```
 
 # Part 3: Back End Activity
 
@@ -51,7 +73,6 @@ $ npm start
 router.get("/hello-world", (req, res) => {
 	const response = "Hello World!";
 	res.send(response);
-});
 });
 ```
 
