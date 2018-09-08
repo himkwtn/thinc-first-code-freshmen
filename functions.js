@@ -28,7 +28,7 @@ const createStudent = student => {
     ...student
   };
   const data = JSON.stringify([...students, newStudent], null, 4);
-  fs.writeFileSync("students.json", data);
+  fs.writeFileSync("./Data/students.json", data);
   return newStudent;
 };
 
@@ -42,7 +42,7 @@ const updateStudent = (id, updated) => {
   if (!student) return;
   const newArr = students.map(e => (e.id == id ? newStudent : e));
   const data = JSON.stringify(newArr, null, 4);
-  fs.writeFileSync("students.json", data);
+  fs.writeFileSync("./Data/students.json", data);
   return newStudent;
 };
 
@@ -50,12 +50,11 @@ const updateSubject = (id, subjects) =>
   updateStudent(id, { courses: subjects });
 
 const deleteStudent = id => {
-  const parsedId = id.replace(/[^\d]/g, "");
+  const deletedStudent = findStudent(id);
   const students = getStudents();
-  const newArr = students.filter(e => e.id != parsedId);
+  const newArr = students.filter(e => e.id != id);
   const data = JSON.stringify(newArr, null, 4);
-  fs.writeFileSync("students.json", data);
-  const deletedStudent = findStudent(parsedId);
+  fs.writeFileSync("./Data/students.json", data);
   return deletedStudent;
 };
 

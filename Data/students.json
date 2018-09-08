@@ -8,9 +8,10 @@
             "line": "abbcd"
         },
         "courses": [
-            "zxcv",
-            "qwe",
-            "ghjhk"
+            "12",
+            "12",
+            "12",
+            "12"
         ]
     },
     {
@@ -84,17 +85,13 @@
         ]
     },
     {
-        "id": 9,
-        "name": "asd",
+        "id": 10,
+        "name": "1",
+        "faculty": "Architecture",
         "contact": {
-            "phone": 1234,
-            "email": "asd@asd.com",
-            "line": "qwer"
-        },
-        "courses": [
-            "asas",
-            "adasd",
-            "dsdsds"
-        ]
+            "phone": "3",
+            "email": "2",
+            "line": "1"
+        }
     }
 ]
