@@ -11,7 +11,8 @@ const {
 const router = Router();
 
 router.get("/hello-world", (req, res) => {
-	res.send("Hello World!");
+	const response = "Hello World!";
+	res.send(response);
 });
 
 router.get("/get", (req, res) => {
