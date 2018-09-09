@@ -15,10 +15,10 @@ npm install
 
 ## Part 2: Basic Syntax
 
-Navigate to **hello-wolrd.js** for reference
+Navigate to **hello-world.js** for reference
 
-1. varibale declaration
-   use **_let_** if the vaule may be changed later
+1. variable declaration
+   use **_let_** if the value may be changed later
 
     ```javascript
     let a = 5; // a = 5
@@ -41,7 +41,7 @@ Navigate to **hello-wolrd.js** for reference
 3. Data Type
 
     - **number**: 1, 2, 3.456
-    - **string**: text ex. "Hello Wolrd" both single and double quote can be used
+    - **string**: text ex. "Hello World" both single and double quote can be used
     ```javascript
     "Hello World"
     'Hello World'
@@ -51,12 +51,12 @@ Navigate to **hello-wolrd.js** for reference
 
         ```javascript
         let numbers = [1, 1, 2, 3, 5, 8];
-        let teltubies = ["tinky winky", "dipsy", "lala", "poe"];
+        let teletubbies = ["tinky winky", "dipsy", "lala", "poe"];
 
         //to access the value, use index
 
         console.log(numbers[2]); // will print 2.
-
+        console.log(teletubbies[0]); //will print "tinky winky"
         //Note that the first index is zero
         ```
 
@@ -92,7 +92,7 @@ Navigate to **hello-wolrd.js** for reference
 4. Functions: accept input(s), do something with that input(s) and may return some value
     ```javascript
     function greeting(name){
-        console.log("Hello" + name)
+        console.log("Hello " + name)
     }
     function add(num1, num2){
         return num1 + num2
@@ -131,7 +131,7 @@ Navigate to **hello-wolrd.js** for reference
 
 ### 3.2 **GET** / **POST** Request
 
-1. GET Reqeust: sends data via URL
+1. GET Request: sends data via URL
     - **Query**
         - Example: a request is sent to the url /find-user **?id=5**
         - **?id=5** is the query
